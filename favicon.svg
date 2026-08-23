@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CyStrat">
+  <rect width="64" height="64" rx="12" fill="#0c0d0f"/>
+  <path d="M18 20h10M18 20v24h10M36 20h10v24H36" fill="none" stroke="#d4a574" stroke-width="3.2" stroke-linecap="square"/>
+  <path d="M28 32h8" stroke="#d4a574" stroke-width="3.2"/>
+</svg>
