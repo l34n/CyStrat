@@ -1,11 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 76" role="img" aria-label="CyStrat">
-  <rect width="64" height="76" fill="#0a0e17"/>
   <defs>
-    <clipPath id="s">
+    <clipPath id="shield">
       <path d="M32 4L56 16v22c0 16-10.5 28.5-24 34C18.5 66.5 8 54 8 38V16L32 4z"/>
     </clipPath>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <g clip-path="url(#s)">
+  <g clip-path="url(#shield)">
+    <rect width="64" height="76" fill="#0a0e17"/>
     <rect x="14" y="16" width="22" height="7" fill="#00e5ff"/>
     <rect x="14" y="25" width="36" height="7" fill="#0a7a8c"/>
     <rect x="14" y="34" width="32" height="7" fill="#ff2e88"/>
@@ -13,5 +20,11 @@
     <rect x="14" y="52" width="24" height="7" fill="#00e5ff"/>
     <rect x="14" y="61" width="20" height="7" fill="#911a4a"/>
   </g>
-  <path d="M32 4L56 16v22c0 16-10.5 28.5-24 34C18.5 66.5 8 54 8 38V16L32 4z" fill="none" stroke="#00e5ff" stroke-width="2.4"/>
+  <path
+    d="M32 4L56 16v22c0 16-10.5 28.5-24 34C18.5 66.5 8 54 8 38V16L32 4z"
+    fill="none"
+    stroke="#00e5ff"
+    stroke-width="2.4"
+    filter="url(#glow)"
+  />
 </svg>

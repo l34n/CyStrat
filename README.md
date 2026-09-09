@@ -1,5 +1,7 @@
 # CyStrat
 
-Private site for [cystrat.io](https://cystrat.io) — independent cybersecurity strategy, architecture, and consulting.
+Site for [cystrat.io](https://cystrat.io) — independent cybersecurity strategy, architecture, and consulting.
 
-Static HTML. Open `index.html` locally, or serve the folder with any static host and point the domain at it.
+Hosted on GitHub Pages: https://l34n.github.io/CyStrat/
+
+Static HTML on `main`. To point `cystrat.io` at it later, add a `CNAME` file with that domain and set DNS to GitHub Pages.
